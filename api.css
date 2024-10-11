@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(16, 15, 15);
+    color: #fff;
+    font-family: "poppins";
+}
+.container{
+    width: 26%;
+}
+#weather{
+    color:orange;
+}
+.card{
+    background-color: #343434;
+    box-shadow:5px 5px 10px rgb(1, 8, 6),-5px -5px 10px #343434;
+    filter: drop-shadow( 2px 2px 6px rgb(0, 200, 255));
+    border-radius: 40px;
+    padding: 3%;
+    width: fit-content;
+    text-align: center;
+}
+.card h4{
+    font-size: 4rem;
+    font-weight:400;
+    margin: 1rem 0;
+}
+img #icon{
+    width: 20%;
+}
+h6 #weather{
+    text-transform: capitalize;
+}
+input{
+    margin-top: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+input[type="text"]{
+    border-radius: 15px;
+    background:transparent;
+    color: steelblue;
+    font-size: 1rem;
+    padding: 5px;
+}
+button.refresh{
+    background: transparent;
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    border: 0;
+    color: #9c9c9d;
+    font-size: 30px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 10px 4px 10px #252525,5px 5px 12px #4a4a4a;
+}
+button.refresh:hover{
+    box-shadow: inset 10px 4px 10px #252525,inset 5px 5px 12px #4a4a4a;
+}
+@media screen and (max-width: 450px){
+   .card{
+    margin-left: 0;
+    border-radius: 15px;
+   }
+   .card h4{
+        font-size: 2rem;
+        margin: 1rem 0;
+   }
+   input[type="text"]
+   {
+    font-size: 10px;
+    padding: 3px;
+   }
+}
